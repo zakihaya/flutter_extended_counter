@@ -121,7 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               _type,
               style: const TextStyle(fontSize: 20, color: Colors.red),
-            )
+            ),
+            if (_counter %2 == 0) const Text("偶数です", style: TextStyle(fontSize: 20, color: Colors.red),),
           ],
         ),
       ),
